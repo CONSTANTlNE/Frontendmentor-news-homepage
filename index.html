@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>News Homepage</title>
     <link rel="stylesheet" href="styles.css" />
-    <script src="js" defer></script>
+    <script src="Js.js" defer></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <img class="logo" src="/images/logo.svg" alt="" />
-        <nav>
+        <img class="logo" src="images/logo.svg" alt="" />
+        <img class="menu" src="images/icon-menu.svg" alt="" />
+        <img class="menu__close" src="images/icon-menu-close.svg" alt="" />
+        <nav class="desktop__nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+          </ul>
+        </nav>
+        <nav class="sidebar__nav">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">New</a></li>
@@ -22,8 +33,9 @@
           </ul>
         </nav>
       </header>
+
       <main>
-        <img src="images/image-web-3-desktop.jpg" alt="" />
+        <div class="img" role="img"></div>
         <h1>The Bright Future of Web 3.0?</h1>
         <div class="main__article">
           <p>
@@ -59,7 +71,7 @@
       </main>
       <footer>
         <div class="footer__article">
-          <img class="img" src="images/image-retro-pcs.jpg" alt="" />
+          <img src="images/image-retro-pcs.jpg" alt="" />
           <div class="footer__article--content">
             <p class="footer__article--content--num">01</p>
             <h4>Reviving Retro PCs</h4>
