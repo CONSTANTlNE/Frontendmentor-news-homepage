@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
-/* html {
-  position: relative;
-} */
+html {
+  overflow-x: hidden;
+  height: 100vh;
+}
 * {
   margin: 0;
   padding: 0;
@@ -208,7 +209,7 @@ h4:active {
 @media (max-width: 390px) {
   header {
     margin-right: 0;
-    max-width: 21.5rem;
+    max-width: 21rem;
   }
   .desktop__nav {
     display: none;
@@ -222,7 +223,7 @@ h4:active {
 
   .main {
     display: grid;
-    grid-template-columns: 21.4375rem;
+    grid-template-columns: 21rem;
     grid-template-rows: repeat(5, 15rem);
   }
   .img {
@@ -230,7 +231,7 @@ h4:active {
     background-size: cover;
     grid-column: 1 / span 1;
     grid-row: 1 / span 1;
-    width: 21.4375rem;
+    width: 21rem;
     height: 15.28rem;
     margin-right: 0;
     margin-bottom: 1.5625rem;
@@ -269,9 +270,11 @@ h4:active {
   }
   footer {
     flex-direction: column;
+    width: 21rem;
   }
   .footer__article {
     margin-bottom: 1rem;
+    width: 21rem;
   }
   .footer__article--content--text {
     font-size: 0.9375rem;
